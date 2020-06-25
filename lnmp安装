@@ -1,0 +1,1 @@
+###### lnmp 安装完成后访问laravel public 文件404 ，查看nginx err 日志发现权限没有权限，此时public/index.php 用户为www,nginx 自进程也为www 用户，laravel 安装在/home/user/wwwroot下经过排查发现/home 文件夹默认权限为，700，修改为755，解决问题
